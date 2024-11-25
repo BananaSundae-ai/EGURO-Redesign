@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-GURO Learning Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- League Spartan Font -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add this just before the closing </body> tag -->
+<script src="logo-animation.js"></script>
+</head>
+<body>
+    <div class="container min-vh-100 d-flex align-items-center">
+        <div class="row w-100">
+            <!-- Left Column: Logos and Text -->
+            <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+                <div class="d-flex w-100 flex-column">
+                    <div class="schoolLogo mb-4">
+                        <img src="assets/imgs/logo.png" alt="School Logo" class="img-fluid animate__animated animate__zoomIn">
+                    </div>
+
+                    <div class="text-content">
+                        <div class="lologo">
+                            <img src="assets/imgs/e-guro%20logo.png" alt="e-Guro Logo" class="img-fluid animate__animated animate__zoomIn">
+                        </div>
+                        <h1 class="display-4 mt-0 mb-0"> GURO</h1>
+                    </div>
+                    
+                    <h2 class="h3 text-white">Learning Management System</h2>
+                    <h3 class="lead text-white">Where knowledge sparks innovation, and the future is crafted today!</h3>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-light">FAQs</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Login Form -->
+            <div class="col-md-6">
+                <div class="loginContainer mx-auto p-4 bg-white shadow rounded" style="max-width: 400px;">
+                    <div class="text-center mb-4">
+                        <h2>LOG IN</h2>
+                    </div>
+
+                    <form>
+                        <div class="mb-3 position-relative">
+                            <label for="username" class="form-label">School ID</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+
+                        <div class="mb-3 position-relative">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <p class="text-muted">Login Attempts: 0</p>
+                        </div>
+
+                        <div class="text-center mb-4">
+                            <a href="#" class="text-decoration-none">Forgot Password?</a>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="position-fixed bottom-0 w-100 text-center py-2 text-white">
+        <small>Copyright © 2021 City College of Calamba. All Rights Reserved.</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #133BBE;
+    --bg: #2463d8;
+    --primary-light: #4B6FE3;
+    --primary-dark: #0F2A8C;
+    --secondary-color: #E3F2FD;
+    --accent-color: #FFB300;
+    --text-color: #FFFFFF;
+    --text-dark: #333333;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-dark);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.schoolLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.schoolLogo img {
+    height: auto;
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Hover Animation */
+.schoolLogo:hover {
+    animation: bounce 0.8s ease infinite;
+}
+.text-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.lologo {
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.lologo img {
+    width: 80px;
+    height: auto;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.text-content h1 {
+    margin: 0;
+    flex-grow: 1;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Login Container Styles */
+.loginContainer {
+    background-color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loginContainer h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid var(--secondary-color);
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(75, 111, 227, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Animations */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (min-width: 1200px) {
+    .text-content {
+        justify-content: flex-start;
+        padding-right: 20px;
+    }
+    
+    .lologo img {
+        width: 100px;
+    }
+
+    .schoolLogo img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .text-content {
+        justify-content: flex-start;
+    }
+    
+    .lologo img {
+        width: 90px;
+    }
+
+    .schoolLogo img {
+        width: 180px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-content {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .lologo img {
+        width: 70px;
+    }
+    
+    .schoolLogo img {
+        width: 150px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .loginContainer {
+        margin: 0 15px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
